@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- map vs forof -->
+    <!--  by using map we can modify the arrray also we can itterate.
+          but with the forof we can not do actual modification
+          we can only itterate the elements of an array
+    -->
+    <script>
+        let fname=["ajay","vijay","digvijay","sanjay"]
+        console.log(fname);
+        let fullName=fname.map((data)=>{
+            return data+ " Chavan"
+        })
+        console.log(fullName);
+
+        for (const fullname1 of fname) {
+            console.log(fullname1+" chavan");
+        }
+
+        //even place data from the array
+        let nameIndex=fname.map((data,index1)=>{
+            if ((index1+1)%2==0) {
+                return data+ " chavan"
+            }
+        })
+
+
+        //square of number from array
+        let num=[10,20,30,40,50]
+        let power=num.map((data)=>{
+            return Math.pow(data,2)
+        })
+        console.log(power);
+
+        let num1=[0,1,2,3,4,5]
+        console.log(num1);
+        let numPower=num1.map((data,index1)=>{
+            return Math.pow(data,index1)
+        })
+        console.log(numPower);
+    </script>
+</body>
+</html>

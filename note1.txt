@@ -1,0 +1,12 @@
+Var a;// Declaration
+a=10;//initialization
+var b=10;//declaration along with initialization
+b="string"//re-initialization
+var b=true;//re-declaration
+
+
+//HOSTING:
+//WE CAN INISIALISED THE MEMBER BEFORE ITS DECLARATION IS CALLED AS HOSTING.
+hoist="hosting"
+        var hoist;
+        console.log(hoist);

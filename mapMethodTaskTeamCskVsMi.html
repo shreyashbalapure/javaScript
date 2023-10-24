@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let players=["hardik","dhoni","chahal","kohli","kl rahul","shubhman","rohit","yuvi","kjhhg","david","xl gail","mohommad","siraj","fgh","bhumra"]
+        console.log(players);
+
+        let csk=players.map((data,index1)=>{
+            if ((index1+1)%2==0) {
+                return data+ " csk"
+            }
+            else 
+            return data+ " mi"
+        })
+        console.log(csk);
+    </script>
+</body>
+</html>

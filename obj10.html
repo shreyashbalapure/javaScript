@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let obj={
+        //     name:"Shreyash",
+        //     age:21,
+        //     proff:"Engineer"
+        // }
+        // console.log(obj);
+        // // delete:it is used to delete existing key and value pairs
+        // delete obj.name
+        // console.log(obj);
+
+        // // add:
+        // obj.email="example@123.com"
+        // console.log(obj);
+
+        // // keys() : it is used to fetch the keys of an object.
+
+        // let keyObj={
+        //     key1:"value1",
+        //     key2:"value2"
+        // }
+        // console.log(Object.keys(keyObj));
+
+        // //values() : it is used to fetch the values of an object
+        // console.log(Object.values(keyObj));
+
+
+        // assign() : it is used to merg more than one object with each-other........
+        // let car={
+        //     company:"tata",
+        //     model:"nano",
+        // }
+        // let engine={
+        //     company:"mercidies",
+        //     engineOrigine:"germen",
+        //     make:"india"
+        // }
+        // let spec={
+        //     powerWindow:true,
+        //     engineAxle:"4*4",
+        //     drive:"rear wheel"
+        // }
+        // console.log(Object.assign(car,engine,spec));
+        
+
+        //entries() : it is used to convert an object into an array.
+        // let mobile={
+        //     company:"samsung",
+        //     price:40000,
+        //     model:"4s"
+        // }
+        // console.log(Object.entries(mobile));
+
+        //seal() : is is used to lock the object ,we can update previous key but cant add new key
+
+        // let property={
+        //     car:"honda",
+        //     watch:"armani",
+        //     house:"bunglow"
+        // }
+        // console.log(property.car);
+        // property.bike="bullet 350"
+        // console.log(property);
+
+        // console.log(Object.seal(property));
+
+        // property.car="nano"
+        // console.log(property);
+
+        // property.privateJet="boing i7"
+        // console.log(property);
+
+        // console.log(Object.isSealed(property));
+
+        //freeze() :is is used to freeze the object we can no modify ass well as add new data if object is frozen
+
+        let duster={
+            company:"camlin",
+            weight:"200gm",
+            ht:"12cm",
+            price:50
+        }
+        console.log(Object.freeze(duster));
+        console.log(Object.isFrozen(duster));
+        duster.company="classmate"
+        console.log(duster)
+        duster.color="black";
+        console.log(duster);
+    </script>
+</body>
+</html>

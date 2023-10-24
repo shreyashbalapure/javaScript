@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //length: IT IS USED TO GET LENGTH OF AN ARRAY ELEMENT.
+        let arr=[10,20,30,40]
+        console.log(arr.length);
+
+        //indexOf(): THIS METHOD IS USED TO GET AN INDEX OF AN ARRAY.
+        console.log(arr.indexOf(20));
+
+        //reverse(): IS IS USED TO REVERSE AN ARRAY ELEMENT.
+        console.log(arr.reverse());
+
+        //push(): IS IS USED TO ADD THE ELEMENT FROM LAST INDEX
+        //NOTE: WE CAN ADD MORE THAN ONE ELEMENTS.
+        let push1=[1,2,3,4]                 
+        console.log(push1);
+        push1.push(5,6,7,8)
+        console.log(push1);
+
+        //pop(): IT IS USED TO REMOVE AN ARRAY ELEMENT FROM LAST.
+        //NOTE: WE CAN NOT REMOVE MORE THAN ONE ELEMENT SIMULTENUSLY.
+        push1.pop()
+        console.log(push1);
+
+        //unshift(): IT IS USED TO ADD THE ELEMENT FROM STARTING INDEX.
+        //NOTE: WE CAN ADD MORE THAN ONE ELEMENT SIMULTENUSLY.
+        let unshift1=[1,2,3,4,5]
+        console.log(unshift1); 
+        unshift1.unshift(0,-1,-2)  
+        console.log(unshift1); 
+        
+        //shift(): IT IS USED TO REMOVE ELENENT FROM STARTING INDEX.
+        //NOTE: WE CAN NOT REMOVE MORE THAN ONE ELEMENT SIMULTENUSLY.
+        let shift1=[1,2,3,4,5]
+        console.log(shift1);
+        shift1.shift()
+        console.log(shift1);
+
+        //sort()
+        let sort1=[1,0,11,100,0]
+        console.log(sort1);
+        console.log(sort1.sort());// 0 0 1 100 11    // it check like dictonery  
+        
+</script>
+</body>
+</html>
+

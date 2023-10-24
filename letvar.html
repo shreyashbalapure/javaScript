@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+        console.log("start");
+
+        let declare;
+        console.log(declare);
+        declare="Initialisation"
+        console.log(declare);
+        let a=10;
+        console.log(a);
+
+        // let redeclare="redeclaration";
+        // let redeclare="hello";
+        // console.log(redeclare);
+
+        let b=20;
+        console.log(b);
+        b="hello"
+        console.log(b);
+
+
+        //Block scope: The variable cannot be accessible out side of the block
+        //block is called as block scope variable.
+        if (true) {
+            let block="BLOCK SCOPE?"
+        }
+        //console.log(block);
+
+        //HOSTING:
+        //WE CAN INISIALISED THE MEMBER BEFORE ITS DECLARATION IS CALLED AS HOSTING.
+        // AND IT IS NOT POSIBLE IN LET VARIABLE    
+        hoist="hosting"
+        let hoist
+        console.log(hoist);
+
+
+
+   </script> 
+</body>
+</html>

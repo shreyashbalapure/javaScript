@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="generateotp()">Generate Otp</button>
+    <script>
+            function generateotp() {
+                var otpdigits=7;
+                var num=(Math.random())*(Math.pow(10,otpdigits))
+                var otp=Math.round(num);
+                var str=String(otp);
+                var count=str.length
+                for (let i = otp;i>=1 ; i--) {
+                    if(otpdigits==count){
+                        console.log(otp);
+                        break;
+                    }else{
+                        generateotp();
+                       break;
+                    }
+                    
+                }
+            }
+    </script>
+</body>
+</html>

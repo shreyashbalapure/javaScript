@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+    MONTH>>>
+    JAN-0
+    FEB-1
+    DAY>>>
+    SUNDAY-0
+    MONDAY-1
+
+    let date1=new Date("yyyy","mm","dd","hr","min","sec","milisecond")
+    */
+
+        let date=new Date()
+        console.log(date);
+
+        let date1=new Date("2012","13","30","12","45","56","800")
+        console.log(date1);
+        
+        console.log(date.getFullYear());
+        console.log(date.getMonth());
+        console.log(date.getDate());
+        console.log(date.getHours());
+        console.log(date.getMinutes());
+        console.log(date.getSeconds());
+        console.log(date.getMilliseconds());
+        console.log(date.getTimezoneOffset());
+
+        // UTC TIME
+        
+        console.log(date.getUTCFullYear());
+        console.log(date.getUTCMonth());
+        console.log(date.getUTCDate());
+        console.log(date.getUTCHours());
+        console.log(date.getUTCMinutes());
+        console.log(date.getUTCSeconds());
+        console.log(date.getUTCMilliseconds());
+        
+
+    </script>
+</body>
+</html>

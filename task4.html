@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let WingA=[["Welcome to Parking A"],[{flatNo:101,ownerName:"ajay",familyCount:4,contact:8965475125},{flatNo:102,ownerName:"vijay",familyCount:4,contact:8965475125},{flatNo:103,ownerName:"ramesh",familyCount:4,contact:8965475125},{flatNo:104,ownerName:"suresh",familyCount:4,contact:8965475125}],[{flatNo:201,ownerName:"ajay",familyCount:4,contact:8965475125},{flatNo:202,ownerName:"vijay",familyCount:4,contact:8965475125},{flatNo:203,ownerName:"ramesh",familyCount:4,contact:8965475125},{flatNo:204,ownerName:"suresh",familyCount:4,contact:8965475125}],[{flatNo:301,ownerName:"ajay",familyCount:4,contact:8965475125},{flatNo:302,ownerName:"vijay",familyCount:4,contact:8965475125},{flatNo:303,ownerName:"ramesh",familyCount:4,contact:8965475125},{flatNo:304,ownerName:"suresh",familyCount:4,contact:8965475125}]]
+        let WingB=[["Welcome to Parking B"],[{flatNo:101,ownerName:"naman",familyCount:4,contact:8965475125},{flatNo:102,ownerName:"vijay",familyCount:4,contact:8965475125},{flatNo:103,ownerName:"ramesh",familyCount:4,contact:8965475125},{flatNo:104,ownerName:"suresh",familyCount:4,contact:8965475125}],[{flatNo:201,ownerName:"ajay",familyCount:4,contact:8965475125},{flatNo:202,ownerName:"vijay",familyCount:4,contact:8965475125},{flatNo:203,ownerName:"ramesh",familyCount:4,contact:8965475125},{flatNo:204,ownerName:"suresh",familyCount:4,contact:8965475125}],[{flatNo:301,ownerName:"ajay",familyCount:4,contact:8965475125},{flatNo:302,ownerName:"vijay",familyCount:4,contact:8965475125},{flatNo:303,ownerName:"ramesh",familyCount:4,contact:8965475125},{flatNo:304,ownerName:"suresh",familyCount:4,contact:8965475125}]]
+        let WingC=[["Welcome to Parking C"],[{flatNo:101,ownerName:"gopal",familyCount:4,contact:8965475125},{flatNo:102,ownerName:"vijay",familyCount:4,contact:8965475125},{flatNo:103,ownerName:"ramesh",familyCount:4,contact:8965475125},{flatNo:104,ownerName:"suresh",familyCount:4,contact:8965475125}],[{flatNo:201,ownerName:"ajay",familyCount:4,contact:8965475125},{flatNo:202,ownerName:"vijay",familyCount:4,contact:8965475125},{flatNo:203,ownerName:"ramesh",familyCount:4,contact:8965475125},{flatNo:204,ownerName:"suresh",familyCount:4,contact:8965475125}],[{flatNo:301,ownerName:"ajay",familyCount:4,contact:8965475125},{flatNo:302,ownerName:"vijay",familyCount:4,contact:8965475125},{flatNo:303,ownerName:"ramesh",familyCount:4,contact:8965475125},{flatNo:304,ownerName:"suresh",familyCount:4,contact:8965475125}]]
+        let WingD=[["Welcome to Parking D"],[{flatNo:101,ownerName:"soham",familyCount:4,contact:8965475125},{flatNo:102,ownerName:"vijay",familyCount:4,contact:8965475125},{flatNo:103,ownerName:"ramesh",familyCount:4,contact:8965475125},{flatNo:104,ownerName:"suresh",familyCount:4,contact:8965475125}],[{flatNo:201,ownerName:"ajay",familyCount:4,contact:8965475125},{flatNo:202,ownerName:"vijay",familyCount:4,contact:8965475125},{flatNo:203,ownerName:"ramesh",familyCount:4,contact:8965475125},{flatNo:204,ownerName:"suresh",familyCount:4,contact:8965475125}],[{flatNo:301,ownerName:"ajay",familyCount:4,contact:8965475125},{flatNo:302,ownerName:"vijay",familyCount:4,contact:8965475125},{flatNo:303,ownerName:"ramesh",familyCount:4,contact:8965475125},{flatNo:304,ownerName:"suresh",familyCount:4,contact:8965475125}]]
+     
+        let choise=prompt("Select The Wing of The Society A/B/C/D")
+
+        switch (choise) {
+            case 'A':
+            console.log(WingA[Number(prompt("enetr the floor"))-1][Number(prompt("flat"))-1]);
+            alert(WingA[Number(prompt("enetr the floor"))-1][Number(prompt("flat"))-1])
+                break;
+            
+                case 'B':
+            console.log(WingB[Number(prompt("enetr the floor"))-1][Number(prompt("flat"))-1]);
+                break;
+
+                case 'C':
+            console.log(WingC[Number(prompt("enetr the floor"))-1][Number(prompt("flat"))-1]);
+                break;
+
+                case 'D':
+            console.log(WingD[Number(prompt("enetr the floor"))-1][Number(prompt("flat"))-1]);
+                break;
+        
+            default:
+                alert("PLEASE CHOISE VAILD WING")
+                break;
+        }
+
+        // console.log(WingA[Number(prompt("enetr the floor"))-1][Number(prompt("flat"))-1]);
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name=prompt("What is your name !");
+        let lTime=prompt("Enter Login Time(In 24H format only)");
+
+       if(lTime>=0 && lTime<=12)
+            {
+                window.alert(`Good Morning ${name}`)
+            }
+       else 
+       if(lTime>12 && lTime<=18)
+            {
+                window.alert(`Good Afternoon ${name}`)
+            }
+            else
+            {
+                window.alert(`Good Evining ${name}`);
+            }
+    </script>
+</body>
+</html>

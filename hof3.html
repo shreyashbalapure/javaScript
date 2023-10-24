@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function interview(name){
+            if(name=="satish"){
+                return (question)=>{
+                    console.log("my name is "+name);
+                    console.log("what  is "+question);
+                }
+            }
+            else if(name=="ganesh"){
+                return (question)=>{
+                    console.log("what is "+question);
+                }
+            }
+
+            else{
+                console.log("welcome");
+            }
+        }
+
+        interview("satish")("html")
+    </script>
+</body>
+</html>

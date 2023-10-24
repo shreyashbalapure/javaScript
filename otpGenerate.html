@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="otp()">GENERATE OTP</button>
+    <script>
+        
+        function otp(){
+            // let num=Math.random()*1000000
+            // let otp=Math.round(num)
+            // //console.log(otp);
+           
+            // for (let index = 111111; index < 999999; index++) {
+                
+            //     console.log(index);
+            // }
+            // //console.log(otp);
+
+            let num=Math.random()*1000000
+            //console.log(num);
+            for (let index = num; index < 999999; index++) {
+               
+                if(index>111111&&index<999999)
+                {
+                    console.log(Math.round(index));
+                    break;
+                }
+                else
+                {
+                    continue;
+                }
+                
+            }
+        }
+
+
+    </script>
+</body>
+</html>

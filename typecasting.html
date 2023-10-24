@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //implicit typecasting
+
+        console.log("implicit typecasting");
+        
+        console.log(10+10);//20
+        console.log(10+"10");//1010
+        console.log("a"-1);//NaN
+        console.log("10"-5);//5
+        console.log("10"-"10");//0
+        console.log(true+"true");//truetrue
+        console.log(true+10);//11
+        console.log(false-5);//-5
+        console.log(true+true);//2
+        console.log(5+"true");//5true
+        console.log(null-true);//-1
+        console.log(""-true);//-1
+        console.log(" "-true);//-1
+        console.log(" "+true);// true
+        console.log(true-" ");//1
+        console.log(true-"a");//NaN
+        console.log('a'+10);//a10
+        console.log("33"+"33"-"3");//3300
+        console.log("33"-"33"+"3");//03
+        console.log("33"+"33"-33);//3300
+      
+
+        //explicite typecasting
+        
+        console.log(Number("10")+10);//20
+        console.log(true+Boolean("string"));//2
+        console.log(String(true)-true);//NaN
+        console.log(Boolean(2)+false);//1
+        console.log(Number(true)+"33");//133
+        console.log(Number(null)+null);//0
+        console.log(Boolean("true"));//true
+        console.log(Boolean("false"));//true
+        console.log(String(10)+Boolean("true"));//10true
+        console.log(Number("10")+String(null));//10null
+        console.log(Boolean("-10")+true);//2
+    </script>
+</body>
+</html>

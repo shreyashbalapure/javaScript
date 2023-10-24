@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>                  
+</head>
+<body>
+    <script>
+        //includes(): IT IS USED TO CHECK THE ELEMENT IS PRESENT OR NOT
+        //NOTE: IF IT IS PRESENT IT WILL RETURN TRUE ELSE FALSE
+        let arr=[10,20,30,40]
+        console.log(arr);
+        console.log(arr.includes("ganya"));//false
+
+        //slice(starting index,last index):it is used to turn original array into new fragment of an array
+        let slice1=["index-o","index-1","index-2","index-3","index-4","index-5",]
+        console.log(slice1);
+        console.log(slice1.slice(1,4));//['index-1', 'index-2', 'index-3']
+        console.log(slice1);
+
+        //splice(starting index,deleted count,[new element])
+        let splice1=["index-o","index-1","index-2","index-3","index-4","index-5","index-6"]
+        console.log(splice1);
+        console.log(splice1.splice(1,2));//['index-1', 'index-2']
+        console.log(splice1);// ['index-o', 'index-3', 'index-4', 'index-5', 'index-6']
+
+        let splice2=["index-o","index-1","index-2","index-3","index-4","index-5",]
+        console.log(splice2);
+        // console.log(splice2.splice(2,3));//['index-2', 'index-3', 'index-4']
+        console.log(splice2);// ['index-o', 'index-1', 'index-5']
+        console.log(splice2.splice(2,3,"ind1 upd","ind2 upd"));       
+    </script>
+</body>
+</html>

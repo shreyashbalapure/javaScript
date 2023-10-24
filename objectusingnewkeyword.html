@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Here we create object with the help of new keyword
+        let obj=new Object()
+        obj.name="jay"
+        obj.age=24
+        obj.proff="Engineer"
+        console.log(obj);
+
+
+        let obj1=new Object()
+        obj1.nesobj={name:"nestedobj",type:"object"} //here we create object inside object
+        obj1.fun=()=>{
+            console.log("This is Function");
+        }
+        console.log(obj1);
+        obj1.fun()
+
+
+        //not required
+
+        // let obj3={
+        //     fun:function(){
+        //         let obj5={
+        //             a:10,
+        //             b:20,
+        //             c:30
+        //         }
+        //     }
+        // }
+        // console.log(obj3);
+        // obj3.fun()
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arrRef=[10,true,"array string",{name:"nested ArrayObject"}]
+        console.log(arrRef);
+        console.log(arrRef[3]);
+        console.log(arrRef[3].name);
+
+        arrRef[3].type="object"
+        console.log(arrRef);
+        arrRef[6]={name:"jay",age:24,proff:"engineer"}
+        console.log(arrRef[6]);
+        console.log(arrRef);
+        arrRef[4]="index-4"
+        arrRef[5]="index-5"
+        console.log(arrRef);
+
+        delete arrRef[6].name
+        console.log(arrRef);
+    </script>
+</body>
+</html>

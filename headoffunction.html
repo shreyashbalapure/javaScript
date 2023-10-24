@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // ES06
+        // HIGHER ORDER FUNCTION:  which will accept the function as an argument//
+        function parent(){
+            console.log("hey hello");
+                
+            return ()=>{
+                console.log("hey this is head of function(HOF)");
+            }
+        }
+        //parent()();
+
+        let demo=parent();
+        demo()
+    </script>
+</body>
+</html>
